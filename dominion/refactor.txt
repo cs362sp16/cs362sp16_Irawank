@@ -1,0 +1,12 @@
+Krisna Irawan 
+CS 362 
+refactor.txt 
+
+Documented Changes: 
+1) I chose the card that I want to refactor, which is village, smithy, council room, great hall, embargo at dominion.c. 
+2) Create a blank function for each refactored card. 
+3) Copy the functionality from the switch statement to the function. 
+4) Determined the correct parameter for each function. 
+5) Repace the functionality in the switch statement with a function call. 
+6) Add the function declaration of village, smithy, council room, great hall, and embargo to the dominion.h. 
+7) Messed up some of the logic. 
