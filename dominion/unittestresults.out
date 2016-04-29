@@ -1,0 +1,65 @@
+Testing the initializeGame function 
+TRYING TO INITIALIZE THE GAME FOR THE FIRST PLAYER 
+TRYING TO INITIALIZE THE GAME FOR THE SECOND PLAYER 
+TEST FAILED: Game Initialize With Duplicate Card
+
+File 'dominion.c'
+Lines executed:16.13% of 558
+Creating 'dominion.c.gcov'
+
+Testing the numHandCards function 
+TRYING COUNT THE NUMBER OF CARDS IN HAND 
+Number Of Card: 5
+TEST SUCCEED: Player Have 5 Cards 
+TEST SUCCESSFULLY COMPLETED
+
+File 'dominion.c'
+Lines executed:16.85% of 558
+Creating 'dominion.c.gcov'
+
+Testing the buyCard function 
+TRYING TO BUY VALID CARD 
+TEST FAILED: Successfully Buying Card 
+TRYING TO BUY INVALID CARD 
+TEST FAILED: Card Is Invalid 
+
+File 'dominion.c'
+Lines executed:19.00% of 558
+Creating 'dominion.c.gcov'
+
+Testing the supplyCount function 
+TEST SUCCEED: Correct Copper Card Supply 
+TEST SUCCEED: Correct Silver Card Supply 
+TEST SUCCEED: Correct Gold Card Supply 
+TEST SUCCESSFULLY COMPLETED
+
+File 'dominion.c'
+Lines executed:19.00% of 558
+Creating 'dominion.c.gcov'
+
+Number Of Card: 6
+TEST FAILED: Incorrect Council Room Card Function 
+File 'dominion.c'
+Lines executed:36.92% of 558
+Creating 'dominion.c.gcov'
+
+Number Of Card: 7
+TEST FAILED: Incorrect Smithy Card Function 
+File 'dominion.c'
+Lines executed:36.92% of 558
+Creating 'dominion.c.gcov'
+
+Number Of Card: 6
+TEST SUCCEED: Correct Gardens Card Function 
+TEST SUCCESSFULLY COMPLETED
+
+File 'dominion.c'
+Lines executed:37.28% of 558
+Creating 'dominion.c.gcov'
+
+Number Of Card: 8
+TEST FAILED: Incorrect Adventurer Card Function 
+File 'dominion.c'
+Lines executed:38.71% of 558
+Creating 'dominion.c.gcov'
+

@@ -1,0 +1,13 @@
+Krisna Irawan 
+CS 362 
+unittesting.txt 
+
+Code coverage: 38.71%
+Things that I find: 
+1) The bugs that I created for Council Room Card Function 
+2) Bugs for Adventurer Card Function, it draws an extra card
+3) Bugs for Adventurer Card Function, only draw two cards 
+4) Gardens is only return -1 at the switch statement, but it does makes sense when I 
+	think about it since gardens are only used later on in the game
+	and it is not an action card and i do find the real function for
+	gardens at another function at dominion.c 

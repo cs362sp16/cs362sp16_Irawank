@@ -9,4 +9,4 @@ Documented Changes:
 4) Determined the correct parameter for each function. 
 5) Repace the functionality in the switch statement with a function call. 
 6) Add the function declaration of village, smithy, council room, great hall, and embargo to the dominion.h. 
-7) Messed up some of the logic. 
+7) Messed up some of the logic at dominion.c 
