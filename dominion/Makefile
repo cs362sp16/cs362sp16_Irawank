@@ -56,11 +56,21 @@ cardtest4: cardtest4.c dominion.o interface.o
 	gcov dominion.c >> unittestresults.out
 	
 	
-randomtest_adventurer: randomtestadventurer.c dominion.o 
+randomtest_adventurer: randomtestadventurer.c 
 	gcc -fprofile-arcs -ftest-coverage -Wall -std=c99 dominion.c randomtestadventurer.c rngs.c -o randomtestadventurer -lm -g
 	./randomtestadventurer >> randomtestadventurer.out
 	gcov -f -b dominion.c >> randomtestadventurer.out
+	
+randomtest_card1: randomtestcard1.c 
+	gcc -fprofile-arcs -ftest-coverage -Wall -std=c99 dominion.c randomtestcard1.c rngs.c -o randomtestcard1 -lm -g
+	./randomtestcard1 >> randomtestcard1.out
+	gcov -f -b dominion.c >> randomtestcard1.out
 
+randomtest_card2: randomtestcard2.c 
+	gcc -fprofile-arcs -ftest-coverage -Wall -std=c99 dominion.c randomtestcard2.c rngs.c -o randomtestcard2 -lm -g
+	./randomtestcard2 >> randomtestcard2.out
+	gcov -f -b dominion.c >> randomtestcard2.out
+	
 all: playdom player
 
 test_all: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4

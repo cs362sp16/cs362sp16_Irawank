@@ -645,7 +645,7 @@ int getCost(int cardNumber)
   // 5 card implemented in their own function 
   
   // Vilage card function 
-  int villageCard (int currentPlayer, int handPos, struct gameState *state)
+  int villageCard(int currentPlayer, int handPos, struct gameState *state)
   {
       // +1 Card
       drawCard(currentPlayer, state);
@@ -659,7 +659,7 @@ int getCost(int cardNumber)
   }
   
   // Smithy card function
-  int smithyCard (int currentPlayer, int handPos, struct gameState *state)
+  int smithyCard(int currentPlayer, int handPos, struct gameState *state)
   {
 	  int i;
 	  
@@ -675,7 +675,7 @@ int getCost(int cardNumber)
   }
   
   // Council room card function 
-  int councilRoomCard (int currentPlayer, int handPos, struct gameState *state)
+  int councilRoomCard(int currentPlayer, int handPos, struct gameState *state)
   {
 	  int i;
 	  
@@ -703,7 +703,7 @@ int getCost(int cardNumber)
   }
   
   // Great hall card function 
-  int greatHallCard (int currentPlayer, int handPos, struct gameState *state)
+  int greatHallCard(int currentPlayer, int handPos, struct gameState *state)
   {
       // +1 Card
       drawCard(currentPlayer, state);
@@ -781,19 +781,23 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 			
     case council_room:
-		councilRoomCard (currentPlayer, handPos, state); // Modified case 
+		councilRoomCard(currentPlayer, handPos, state); // Modified case
+
 	
 	case smithy:
-		smithyCard (currentPlayer, handPos, state); // Modified case 
+		smithyCard(currentPlayer, handPos, state); // Modified case 
+
 		
     case village:
-		villageCard (currentPlayer, handPos, state); // Modified case
+		villageCard(currentPlayer, handPos, state); // Modified case
+
 		
 	case great_hall:
-		greatHallCard (currentPlayer, handPos, state); // Modified case
+		greatHallCard(currentPlayer, handPos, state); // Modified case
+
 	
 	case embargo: 
-		embargoCard (currentPlayer, handPos, state, choice1); // Modified case
+		embargoCard(currentPlayer, handPos, state, choice1); // Modified case
 		
 			
     case feast:

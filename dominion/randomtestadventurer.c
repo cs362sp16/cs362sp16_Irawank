@@ -1,3 +1,10 @@
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 3  
+* Random Testing the Adventurer Card Function
+*/
+
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include "rngs.h"

@@ -1,0 +1,242 @@
+TAKE RANDOMIZED SEED
+DECK COUNTS: 14
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+DECK COUNTS: 18
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+DECK COUNTS: 32
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+DECK COUNTS: 28
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+DECK COUNTS: 28
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+DECK COUNTS: 31
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+DECK COUNTS: 26
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+DECK COUNTS: 13
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+DECK COUNTS: 26
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+DECK COUNTS: 34
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+DECK COUNTS: 6
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST FAILED: GET THE WRONG DISCARD COUNTS
+DECK COUNTS: 17
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+DECK COUNTS: 20
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+DECK COUNTS: 17
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+DECK COUNTS: 31
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+DECK COUNTS: 31
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+DECK COUNTS: 29
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+DECK COUNTS: 22
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+DECK COUNTS: 21
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+DECK COUNTS: 24
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG DECK COUNTS
+TEST SUCCESSFUL: GET THE RIGHT DISCARD COUNTS
+Function 'updateCoins'
+Lines executed:81.82% of 11
+Branches executed:100.00% of 8
+Taken at least once:75.00% of 8
+No calls
+
+Function 'gainCard'
+Lines executed:61.54% of 13
+Branches executed:100.00% of 6
+Taken at least once:50.00% of 6
+Calls executed:100.00% of 1
+
+Function 'discardCard'
+Lines executed:84.62% of 13
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+No calls
+
+Function 'cardEffect'
+Lines executed:12.56% of 215
+Branches executed:17.46% of 189
+Taken at least once:5.29% of 189
+Calls executed:16.95% of 59
+
+Function 'embargoCard'
+Lines executed:85.71% of 7
+Branches executed:100.00% of 2
+Taken at least once:50.00% of 2
+Calls executed:100.00% of 1
+
+Function 'greatHallCard'
+Lines executed:100.00% of 5
+No branches
+Calls executed:100.00% of 2
+
+Function 'councilRoomCard'
+Lines executed:100.00% of 9
+Branches executed:100.00% of 6
+Taken at least once:100.00% of 6
+Calls executed:100.00% of 3
+
+Function 'smithyCard'
+Lines executed:100.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+Calls executed:100.00% of 2
+
+Function 'villageCard'
+Lines executed:100.00% of 5
+No branches
+Calls executed:100.00% of 2
+
+Function 'getCost'
+Lines executed:10.00% of 30
+Branches executed:100.00% of 28
+Taken at least once:3.57% of 28
+No calls
+
+Function 'drawCard'
+Lines executed:95.45% of 22
+Branches executed:100.00% of 6
+Taken at least once:83.33% of 6
+Calls executed:100.00% of 1
+
+Function 'getWinners'
+Lines executed:0.00% of 24
+Branches executed:0.00% of 22
+Taken at least once:0.00% of 22
+Calls executed:0.00% of 2
+
+Function 'scoreFor'
+Lines executed:0.00% of 24
+Branches executed:0.00% of 42
+Taken at least once:0.00% of 42
+Calls executed:0.00% of 3
+
+Function 'isGameOver'
+Lines executed:0.00% of 10
+Branches executed:0.00% of 8
+Taken at least once:0.00% of 8
+No calls
+
+Function 'endTurn'
+Lines executed:0.00% of 20
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 3
+
+Function 'whoseTurn'
+Lines executed:100.00% of 2
+No branches
+No calls
+
+Function 'fullDeckCount'
+Lines executed:0.00% of 9
+Branches executed:0.00% of 12
+Taken at least once:0.00% of 12
+No calls
+
+Function 'supplyCount'
+Lines executed:100.00% of 2
+No branches
+No calls
+
+Function 'handCard'
+Lines executed:0.00% of 3
+No branches
+Calls executed:0.00% of 1
+
+Function 'numHandCards'
+Lines executed:0.00% of 2
+No branches
+Calls executed:0.00% of 1
+
+Function 'buyCard'
+Lines executed:0.00% of 13
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 4
+
+Function 'playCard'
+Lines executed:0.00% of 14
+Branches executed:0.00% of 10
+Taken at least once:0.00% of 10
+Calls executed:0.00% of 3
+
+Function 'shuffle'
+Lines executed:93.75% of 16
+Branches executed:100.00% of 8
+Taken at least once:87.50% of 8
+Calls executed:100.00% of 2
+
+Function 'initializeGame'
+Lines executed:83.87% of 62
+Branches executed:95.65% of 46
+Taken at least once:78.26% of 46
+Calls executed:100.00% of 5
+
+Function 'kingdomCards'
+Lines executed:0.00% of 13
+No branches
+No calls
+
+Function 'newGame'
+Lines executed:100.00% of 3
+No branches
+No calls
+
+Function 'compare'
+Lines executed:100.00% of 6
+Branches executed:100.00% of 4
+Taken at least once:100.00% of 4
+No calls
+
+File 'dominion.c'
+Lines executed:33.87% of 558
+Branches executed:36.69% of 417
+Taken at least once:20.38% of 417
+Calls executed:30.53% of 95
+Creating 'dominion.c.gcov'
+

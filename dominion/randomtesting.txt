@@ -1,0 +1,51 @@
+Krisna Irawan 
+CS 362 
+randomtesting.txt 
+
+Development process: 
+1) I create all the necessary files for the random testing such as randomtestadventurer, randomtestcard1, and randomtestcard2
+2) To create the random testing, I create a random seed for the number of test that being run. 
+3) Then I create a random deck counts, hand counts, and discard counts to make sure that every test being run is a random case
+4) Next I check some of the functionality of the card as following and make sure that its all correct:
+	For the adventurer card: 
+		a) Check the treasure card in players hand 
+		b) Check the hand counts 
+		c) Check the played card counts 
+	For the smithy card: 
+		a) Check the hand counts 
+		b) Check the deck counts 
+		c) Check the discard counts 
+	For the council room card: 
+		a) Check the hand counts 
+		b) Check the deck counts 
+		c) Check the discard counts 
+
+Findings: 
+	1) I found out that there is a bugs in adventurer card. The hand counts is wrong, I think it is because they forgot to discard one
+	   tressure card after drawing 2 tressure cards. I think I have 100% coverage for adventurer card functionality. 
+	2) Smithy card works perfectly fine. I think I make a mistake in my assignment 2, by calculating the wrong hand counts. I am glad that I 
+	   create this test and find a mistake in my previous test. I have 100% coverage for smithy card functionality.
+	   
+			Function 'smithyCard'
+			Lines executed:100.00% of 5
+			Branches executed:100.00% of 2
+			Taken at least once:100.00% of 2
+			Calls executed:100.00% of 2
+			
+	3) I also found out the bug that I create for council room card functionality. I have 100% coverage for council room card functionality. 
+	
+			Function 'councilRoomCard'
+			Lines executed:100.00% of 9
+			Branches executed:100.00% of 6
+			Taken at least once:100.00% of 6
+			Calls executed:100.00% of 3
+	
+	4) All of the random test cases run really fast, its almost at an instant time. 
+	
+Discussion: 
+From my findings I think unit test have a slightly higher code coverage than random testing. From my test result, my unit tests have around 38% code coverage,
+while random tests have around 33% code coverage. Using random testing is great for finding a bugs from a unique or odd cases. Because the input of the test 
+is random, we can have a really odd input that we might not think that it will create a problem, but in reality it might create a problem. However, random testing 
+also might take a longer time to run and sometimes its not worthed to run random test in a simple function. I think random testing do a better job at finding bugs for 
+more complex cases. On the other hand, unit testing have a higher code and line coverage, this is really useful to make sure that we are not missing any line of code 
+that might create a bugs. Random and unit testing have its own advantages, so using the right test at the right time is more important. 
