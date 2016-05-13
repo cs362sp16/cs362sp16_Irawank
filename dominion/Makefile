@@ -54,6 +54,12 @@ cardtest4: cardtest4.c dominion.o interface.o
 	gcc -o cardtest4 -g cardtest4.c dominion.o rngs.o interface.o $(CFLAGS)
 	./cardtest4 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
+	
+	
+randomtest_adventurer: randomtestadventurer.c dominion.o 
+	gcc -fprofile-arcs -ftest-coverage -Wall -std=c99 dominion.c randomtestadventurer.c rngs.c -o randomtestadventurer -lm -g
+	./randomtestadventurer >> randomtestadventurer.out
+	gcov -f -b dominion.c >> randomtestadventurer.out
 
 all: playdom player
 
