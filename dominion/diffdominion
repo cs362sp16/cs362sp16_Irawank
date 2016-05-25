@@ -1,0 +1,25 @@
+#!/bin/bash -e
+
+otherDir=`pwd`
+
+cd $1
+make testdominion.diff
+./testdominion $3 >> testOne.out
+mv testOne.out $otherDir
+gcov dominion.c 
+
+cd $2
+make testdominion.diff
+./testdominion $3 >> testTwo.out
+mv testTwo.out $otherDir
+gcov dominion.c 
+
+diff -s -y testOne.out testTwo.out >> diffResults.out
+results=`tail -n 1 < diffResults.out`
+if ["$results" == "Files testOne.out and testTwo.out are identical"]; 
+	then
+		echo "TEST PASSED"
+	else
+		echo "TEST FAILED"
+		cat diffResults.out
+fi

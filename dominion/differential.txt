@@ -1,0 +1,14 @@
+Krisna Irawan 
+CS 362 
+differential.txt 
+
+I found that almost all of my run result in "test passed". It is hard to find a dominion 
+that is failed the test. However, I do find one dominion that fail the test and his test 
+coverage was slightly lower than mine (around 62% compared to my 65% coverage). It is hard
+to find which one is correct because the diff test doesnt really give us any hint at all. 
+It only said that the result when running our testdominion is different, without any real 
+explaination of which one is correct and which one is wrong. I personally doesnt really like
+this testing method. Our case is not ideal because most of our code are similiar and it is 
+hard to find a which one is the correct implementation since our dominion code are full of bugs. 
+Nobody have the "correct and bug free" dominion code in our class, and with this diff testing, 
+it is hard to find which one is the correct implementation since all of our code are not bug free. 
