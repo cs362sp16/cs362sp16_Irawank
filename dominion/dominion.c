@@ -816,14 +816,15 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 	if (supplyCount(choice1, state) <= 0){
 	  if (DEBUG)
 	    printf("None of that card left, sorry!\n");
-
+			return -1;
 	  if (DEBUG){
 	    printf("Cards Left: %d\n", supplyCount(choice1, state));
-	  }
+	  		return -1;
+		}
 	}
 	else if (state->coins < getCost(choice1)){
 	  printf("That card is too expensive!\n");
-
+			return -1;
 	  if (DEBUG){
 	    printf("Coins: %d < %d\n", state->coins, getCost(choice1));
 	  }
@@ -851,44 +852,6 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       }
       //Reset Hand
       			
-      return 0;
-			
-    case gardens:
-      return -1;
-			
-    case mine:
-      j = state->hand[currentPlayer][choice1];  //store card we will trash
-
-      if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] > gold)
-	{
-	  return -1;
-	}
-		
-      if (choice2 > treasure_map || choice2 < curse)
-	{
-	  return -1;
-	}
-
-      if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) )
-	{
-	  return -1;
-	}
-
-      gainCard(choice2, state, 2, currentPlayer);
-
-      //discard card from hand
-      discardCard(handPos, currentPlayer, state, 0);
-
-      //discard trashed card
-      for (i = 0; i < state->handCount[currentPlayer]; i++)
-	{
-	  if (state->hand[currentPlayer][i] == j)
-	    {
-	      discardCard(i, currentPlayer, state, 0);			
-	      break;
-	    }
-	}
-			
       return 0;
 			
     case remodel:
