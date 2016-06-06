@@ -1,0 +1,29 @@
+Krisna Irawan 
+CS 362 
+washburdBugReport.txt 
+
+I found bugs in washburd's Smithy card implementation: 
+    
+	for (i = 0; i < 2; i++) 
+	{
+	  drawCard(currentPlayer, state);
+	}
+
+His Smithy implementation add 2 cards instead of 3 cards 
+Both my unit testing and my random testing shows that there is a bug
+in his Smithy implementation.
+
+From the unittestresults.out 
+TEST FAILED: Incorrect Smithy Card Function 
+File 'dominion.c'
+Lines executed:27.71% of 563
+Creating 'dominion.c.gcov'
+
+The fix will be changing the for loop condition from i < 2 to i < 3. 
+
+	for (i = 0; i < 3; i++) 
+	{
+	  drawCard(currentPlayer, state);
+	}
+	
+This fix will make a correct 3 cards addition. 

@@ -1,0 +1,53 @@
+Krisna Irawan 
+CS 362 
+washburdBugReport.txt 
+
+I found bugs in washburd's Adventurer card implementation: 
+
+ case adventurer:
+    while(drawntreasure<2){
+	if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+	  shuffle(currentPlayer, state);
+	}
+	drawCard(currentPlayer, state);
+	cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+	if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+	  drawntreasure++;
+	else{
+	  temphand[z]=cardDrawn;
+	  state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+	  z++;
+	}
+      }
+      while(z-1>=0){
+	state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
+	z=z-1;
+      }
+      return 0;
+	  
+It seems like his Adventurer card implementation draws more card than it should be. 
+Both my unit testing and my random testing shows that there is a bug
+in his Adventurer implementation.
+
+From the randomtestadventurer.out 
+TEST SUCCESSFUL: GET TWO TREASURE CARDS
+TEST FAILED: GET THE WRONG HAND COUNTS
+TEST FAILED: GET THE WRONG PLAYED CARD COUNTS
+
+From the unittestresults.out 
+Number Of Card: 8
+TEST FAILED: Incorrect Adventurer Card Function 
+File 'dominion.c'
+Lines executed:29.48% of 563
+Creating 'dominion.c.gcov'
+    
+I think one of the reason this bug happens is because he forget to discard 
+the adventurer action card after using it, resulting in one extra card in player hand. 
+To fix this bug, we should replace return 0; with
+
+      discardCard(handPos, currentPlayer, state, 0);
+      return 0;
+
+at the end of the Adventuer card implementation to make sure that we have 
+discard the used adventurer card. This fix will make sure that we will discard the 
+used adventurer card.

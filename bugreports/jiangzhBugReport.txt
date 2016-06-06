@@ -1,0 +1,25 @@
+Krisna Irawan 
+CS 362 
+jiangzhBugReport.txt 
+
+I found bugs in jiangzh's Council Room card implementation: 
+    
+    for(i=0; i<3; i++)
+        drawCard(currentPlayer, state);
+
+His Council Room implementation draws 3 cards instead of 4 cards 
+My unit testing shows that there is a bug in his Council Room implementation.
+
+From the unittestresults.out 
+Number Of Card: 8
+TEST FAILED: Incorrect Council Room Card Function 
+File 'dominion.c'
+Lines executed:26.07% of 560
+Creating 'dominion.c.gcov'
+
+The fix will be changing the for loop condition from i < 3 to i < 4. 
+
+    for(i=0; i<4; i++)
+        drawCard(currentPlayer, state);
+	
+This fix will make a correct draw 4 cards. 

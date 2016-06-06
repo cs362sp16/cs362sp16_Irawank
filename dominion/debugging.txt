@@ -1,0 +1,74 @@
+Krisna Irawan 
+CS 362 
+debugging.txt 
+
+I identify most of my bug in my code by using the test 
+that I created. I used my random test and unit test to identify the 
+bug that I might have in my code. However, to futher understand the bug 
+and know where to fix the bug, I used GDB in order to do that. I need 
+to understand how the correct implementation works first before
+I start using GDB. Then, by using GDB as my debugger I can see how the line 
+by line in my function executed and found the incorrect line of execution. 
+Next, after we identified the incorrect line, we can start debugging from that 
+line. 
+
+Here is what I do in details: 
+First, I noticed from my cardtest1 that my Council Room card implementation has a
+bug in it. As stated that in my unittestresults.out, it seems that my Council Room 
+implementation draws a wrong number of cards. 
+
+Number Of Card: 6
+TEST FAILED: Incorrect Council Room Card Function 
+File 'dominion.c'
+Lines executed:36.92% of 558
+Creating 'dominion.c.gcov'
+
+I know the right number of card should be 8 instead of 6. This is when I decide to use
+GDB as my debugger. I first check the game initialization to make sure that this bug is 
+not a game initialization error. I set my break point at line 44 in my cardtest1.c to 
+see how the game is initialized on the test. Next, I set my break point at line 37 and line 199
+in dominion.c to see if game initialized correctly. From the GDB I know that this initializeGame
+function works perfectly both in cardtest1.c and dominion.c, which means that there is no bug
+in this function.   
+
+Next, I move my focus to the Council Room implementation. At this point I am sure that a bug 
+will be find in the Council Room function. I run GDB and set my breakpoint at line 47 and 49 in 
+my cardtest1.c. As expected, I found that the council room implementation draws a wrong number of cards, 
+it draws 2 cards instead of 4 cards like its supposed to. Then, I set my breakpoint at line 683 and 685 
+in my dominion.c to see how council room drawing cards implementation. From this breakpoint I found that 
+I set my for loop to i<2 instead of i<4, which makes my council room card draw only 2 cards instead of 4 cards. 
+Then after I found the incorrect line of codes, I can start debugging my code from that line. 
+
+Here is my original code: 
+
+    for (i = 0; i < 2; i++)
+	{
+		drawCard(currentPlayer, state);
+	}
+
+Here is how i would fix it: 
+
+    for (i = 0; i < 4; i++)
+	{
+		drawCard(currentPlayer, state);
+	}
+ 
+Agan's principle in actions: 
+
+1) Understand the system: 
+   To find and indentify the bug I should first understand how the correct result of the implementation would look like
+   and also how each function in the system interact with each other. Once I understand the system, it will be easier for 
+   me to identify the bug and find a better starting location of where to find the bug. 
+   
+5) Change one thing at a time: 
+   I always tried to do this during the debugging process. I tried to make a one small change at a time and see what happens. 
+   This is really helpful since by making a small change, we can see how the line by line being executed and connected to each 
+   other. Also, by making one small change at a time, it also eliminate the chance to overlook a bug or even introduce new bug because 
+   of the complication of writing a lot of big changes to the code. 
+   
+7) Check the plug: 
+   In debugging, it is wise to question everything. Sometimes it is wise to question our tests or even our debugger because it is possible 
+   that the real bug might be in your test or debugger. That is why when I use GDB, I also set my breakpoint at my cardtest1 to see if 
+   the call of the function is correct and the result of each call. I want to make sure that my test function is correct and eliminate the 
+   possibility of overlooking a bug in my test. 
+
