@@ -24,9 +24,9 @@ Here is step by step explaination that I do for this part of my project:
 	7) I analyze the output and draw my conclusion 
 
 	Conclusion: I think this is a useful tool for debugging, especialy when 
-				we are trying to debug a code with a huge chunk of test code 
-				to test it. It will minimize the failing case and narrow down 
-				our focus to a function that will be most necessary in creating 
-				a bug, which will definitely safe a lot of time and effort during
+	            we are trying to debug a code with a huge chunk of test code 
+	            to test it. It will minimize the failing case and narrow down 
+	            our focus to a function that will be most necessary in creating 
+	            a bug, which will definitely safe a lot of time and effort during 
 				debugging. 
 				
