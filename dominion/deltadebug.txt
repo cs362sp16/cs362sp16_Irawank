@@ -1,0 +1,32 @@
+Krisna Irawan 
+CS 362 
+deltadebug.txt 
+
+I decide to do delta debugging for the part 3 of my final project. 
+Here is step by step explaination that I do for this part of my project: 
+	1) I open prof Zeller website about using delta debugging, 
+	   the link is listed below: 
+	   https://www.st.cs.uni-saarland.de/dd/ddusage.php3
+	2) Next, I follow the step by step instruction on how to use
+	   Delta debugging in that website. 
+	3) I download all the necessary file such as MyDD.py, DD.py, 
+	   and GCCDD.py 
+	4) Then, I modified my GCCDD.py file changing the bug.c file to 
+	   my cardtest1.c and also invoke the DD function instead of DDMIN 
+	   function 
+	5) I choose cardtest1.c because this is a failing test, with this 
+	   test I have found a bug in my Council Room functionality. That 
+	   is why I think this is a good test case to use for the delta 
+	   debugging tool
+	6) I run the delta debugging tool and send its output to a file called 
+	   deltaTest.out 
+	   Here is a command to do that: python GCCDD.py > deltaTest.out
+	7) I analyze the output and draw my conclusion 
+
+	Conclusion: I think this is a useful tool for debugging, especialy when 
+				we are trying to debug a code with a huge chunk of test code 
+				to test it. It will minimize the failing case and narrow down 
+				our focus to a function that will be most necessary in creating 
+				a bug, which will definitely safe a lot of time and effort during
+				debugging. 
+				

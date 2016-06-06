@@ -1,0 +1,4493 @@
+Isolating the failure-inducing difference...
+
+dd: 1003 deltas left: /* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+
+dd (run #1): trying 501 + 502
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// 
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+Exit code 0
+
+dd: 502 deltas left: Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+
+dd (run #2): trying 251 + 251
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initia
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: ‘initia’ undeclared (first use in this function)
+  initia
+  ^
+input.c:44:2: note: each undeclared identifier is reported only once for each function it appears in
+input.c:44:2: error: expected ‘;’ at end of input
+input.c:44:2: error: expected declaration or statement at end of input
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// lizeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c:37:16: error: expected declaration specifiers or ‘...’ before numeric constant
+  addCardToHand(0, 8, &game);
+                ^
+input.c:37:19: error: expected declaration specifiers or ‘...’ before numeric constant
+  addCardToHand(0, 8, &game);
+                   ^
+input.c:37:22: error: expected declaration specifiers or ‘...’ before ‘&’ token
+  addCardToHand(0, 8, &game);
+                      ^
+input.c:38:11: error: expected declaration specifiers or ‘...’ before numeric constant
+  playCard(5, 0, 0, 0, &game);
+           ^
+input.c:38:14: error: expected declaration specifiers or ‘...’ before numeric constant
+  playCard(5, 0, 0, 0, &game);
+              ^
+input.c:38:17: error: expected declaration specifiers or ‘...’ before numeric constant
+  playCard(5, 0, 0, 0, &game);
+                 ^
+input.c:38:20: error: expected declaration specifiers or ‘...’ before numeric constant
+  playCard(5, 0, 0, 0, &game);
+                    ^
+input.c:38:23: error: expected declaration specifiers or ‘...’ before ‘&’ token
+  playCard(5, 0, 0, 0, &game);
+                       ^
+input.c:40:29: error: ‘game’ undeclared here (not in a function)
+  int result = numHandCards(&game);
+                             ^
+input.c:42:9: error: expected declaration specifiers or ‘...’ before string constant
+  printf("Number Of Card: %d\n", result);
+         ^
+input.c:42:33: error: expected declaration specifiers or ‘...’ before ‘result’
+  printf("Number Of Card: %d\n", result);
+                                 ^
+input.c:44:2: warning: data definition has no type or storage class [enabled by default]
+  myAssert(result);
+  ^
+input.c:44:2: warning: parameter names (without types) in function declaration [enabled by default]
+input.c:44:2: error: conflicting types for ‘myAssert’
+input.c:14:6: note: previous definition of ‘myAssert’ was here
+ void myAssert(int bool) 
+      ^
+input.c:46:2: warning: data definition has no type or storage class [enabled by default]
+  checkAsserts();
+  ^
+input.c:46:2: error: conflicting types for ‘checkAsserts’
+input.c:27:6: note: previous definition of ‘checkAsserts’ was here
+ void checkAsserts() 
+      ^
+input.c:47:2: error: expected identifier or ‘(’ before ‘return’
+  return 0;
+  ^
+input.c:48:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+Exit code 256
+dd: increase granularity to 4
+
+dd (run #3): trying 125 + 125 + 126 + 126
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:41:2: error: expected ‘,’ or ‘;’ at end of input
+  int randomSeed = 17
+  ^
+input.c:41:2: error: expected declaration or statement at end of input
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// ;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c:36:6: error: ‘kingdomCards’ redeclared as different kind of symbol
+  int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+      ^
+In file included from input.c:8:0:
+dominion.h:81:6: note: previous declaration of ‘kingdomCards’ was here
+ int* kingdomCards(int k1, int k2, int k3, int k4, int k5, int k6, int k7,
+      ^
+input.c:38:59: error: expected ‘)’ before ‘&’ token
+  initializeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+                                                           ^
+input.c:40:16: error: expected declaration specifiers or ‘...’ before numeric constant
+  addCardToHand(0, 8, &game);
+                ^
+input.c:40:19: error: expected declaration specifiers or ‘...’ before numeric constant
+  addCardToHand(0, 8, &game);
+                   ^
+input.c:40:22: error: expected declaration specifiers or ‘...’ before ‘&’ token
+  addCardToHand(0, 8, &game);
+                      ^
+input.c:41:11: error: expected declaration specifiers or ‘...’ before numeric constant
+  playCard(5, 0, 0, 0, &game);
+           ^
+input.c:41:14: error: expected declaration specifiers or ‘...’ before numeric constant
+  playCard(5, 0, 0, 0, &game);
+              ^
+input.c:41:17: error: expected declaration specifiers or ‘...’ before numeric constant
+  playCard(5, 0, 0, 0, &game);
+                 ^
+input.c:41:20: error: expected declaration specifiers or ‘...’ before numeric constant
+  playCard(5, 0, 0, 0, &game);
+                    ^
+input.c:41:23: error: expected declaration specifiers or ‘...’ before ‘&’ token
+  playCard(5, 0, 0, 0, &game);
+                       ^
+input.c:43:29: error: ‘game’ undeclared here (not in a function)
+  int result = numHandCards(&game);
+                             ^
+input.c:45:9: error: expected declaration specifiers or ‘...’ before string constant
+  printf("Number Of Card: %d\n", result);
+         ^
+input.c:45:33: error: expected declaration specifiers or ‘...’ before ‘result’
+  printf("Number Of Card: %d\n", result);
+                                 ^
+input.c:47:2: warning: data definition has no type or storage class [enabled by default]
+  myAssert(result);
+  ^
+input.c:47:2: warning: parameter names (without types) in function declaration [enabled by default]
+input.c:47:2: error: conflicting types for ‘myAssert’
+input.c:14:6: note: previous definition of ‘myAssert’ was here
+ void myAssert(int bool) 
+      ^
+input.c:49:2: warning: data definition has no type or storage class [enabled by default]
+  checkAsserts();
+  ^
+input.c:49:2: error: conflicting types for ‘checkAsserts’
+input.c:27:6: note: previous definition of ‘checkAsserts’ was here
+ void checkAsserts() 
+      ^
+input.c:50:2: error: expected identifier or ‘(’ before ‘return’
+  return 0;
+  ^
+input.c:51:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// ;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initi
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c:36:6: error: ‘kingdomCards’ redeclared as different kind of symbol
+  int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+      ^
+In file included from input.c:8:0:
+dominion.h:81:6: note: previous declaration of ‘kingdomCards’ was here
+ int* kingdomCards(int k1, int k2, int k3, int k4, int k5, int k6, int k7,
+      ^
+input.c:38:2: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ at end of input
+  initi
+  ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17alizeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:41:19: error: invalid suffix "alizeGame" on integer constant
+  int randomSeed = 17alizeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+                   ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// alizeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int 
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c:37:16: error: expected declaration specifiers or ‘...’ before numeric constant
+  addCardToHand(0, 8, &game);
+                ^
+input.c:37:19: error: expected declaration specifiers or ‘...’ before numeric constant
+  addCardToHand(0, 8, &game);
+                   ^
+input.c:37:22: error: expected declaration specifiers or ‘...’ before ‘&’ token
+  addCardToHand(0, 8, &game);
+                      ^
+input.c:38:11: error: expected declaration specifiers or ‘...’ before numeric constant
+  playCard(5, 0, 0, 0, &game);
+           ^
+input.c:38:14: error: expected declaration specifiers or ‘...’ before numeric constant
+  playCard(5, 0, 0, 0, &game);
+              ^
+input.c:38:17: error: expected declaration specifiers or ‘...’ before numeric constant
+  playCard(5, 0, 0, 0, &game);
+                 ^
+input.c:38:20: error: expected declaration specifiers or ‘...’ before numeric constant
+  playCard(5, 0, 0, 0, &game);
+                    ^
+input.c:38:23: error: expected declaration specifiers or ‘...’ before ‘&’ token
+  playCard(5, 0, 0, 0, &game);
+                       ^
+input.c:40:2: error: expected identifier or ‘(’ at end of input
+  int 
+  ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initiresult = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: ‘initiresult’ undeclared (first use in this function)
+  initiresult = numHandCards(&game);
+  ^
+input.c:44:2: note: each undeclared identifier is reported only once for each function it appears in
+input.c:46:33: error: ‘result’ undeclared (first use in this function)
+  printf("Number Of Card: %d\n", result);
+                                 ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c:37:9: error: expected declaration specifiers or ‘...’ before string constant
+  printf("Number Of Card: %d\n", result);
+         ^
+input.c:37:33: error: unknown type name ‘result’
+  printf("Number Of Card: %d\n", result);
+                                 ^
+input.c:39:2: warning: data definition has no type or storage class [enabled by default]
+  myAssert(result);
+  ^
+input.c:39:2: warning: parameter names (without types) in function declaration [enabled by default]
+input.c:39:2: error: conflicting types for ‘myAssert’
+input.c:14:6: note: previous definition of ‘myAssert’ was here
+ void myAssert(int bool) 
+      ^
+input.c:41:2: warning: data definition has no type or storage class [enabled by default]
+  checkAsserts();
+  ^
+input.c:41:2: error: conflicting types for ‘checkAsserts’
+input.c:27:6: note: previous definition of ‘checkAsserts’ was here
+ void checkAsserts() 
+      ^
+input.c:42:2: error: expected identifier or ‘(’ before ‘return’
+  return 0;
+  ^
+input.c:43:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int 
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:49:2: error: expected identifier or ‘(’ at end of input
+  int 
+  ^
+input.c:49:2: error: expected declaration or statement at end of input
+Exit code 256
+dd: increase granularity to 8
+
+dd (run #4): trying 62 + 62 + 63 + 63 + 63 + 63 + 63 + 63
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct g
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:38:9: error: expected identifier or ‘(’ at end of input
+  struct g
+         ^
+input.c:38:9: error: expected declaration or statement at end of input
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// ameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c:39:6: error: ‘kingdomCards’ redeclared as different kind of symbol
+  int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+      ^
+In file included from input.c:8:0:
+dominion.h:81:6: note: previous declaration of ‘kingdomCards’ was here
+ int* kingdomCards(int k1, int k2, int k3, int k4, int k5, int k6, int k7,
+      ^
+input.c:41:59: error: expected ‘)’ before ‘&’ token
+  initializeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+                                                           ^
+input.c:43:16: error: expected declaration specifiers or ‘...’ before numeric constant
+  addCardToHand(0, 8, &game);
+                ^
+input.c:43:19: error: expected declaration specifiers or ‘...’ before numeric constant
+  addCardToHand(0, 8, &game);
+                   ^
+input.c:43:22: error: expected declaration specifiers or ‘...’ before ‘&’ token
+  addCardToHand(0, 8, &game);
+                      ^
+input.c:44:11: error: expected declaration specifiers or ‘...’ before numeric constant
+  playCard(5, 0, 0, 0, &game);
+           ^
+input.c:44:14: error: expected declaration specifiers or ‘...’ before numeric constant
+  playCard(5, 0, 0, 0, &game);
+              ^
+input.c:44:17: error: expected declaration specifiers or ‘...’ before numeric constant
+  playCard(5, 0, 0, 0, &game);
+                 ^
+input.c:44:20: error: expected declaration specifiers or ‘...’ before numeric constant
+  playCard(5, 0, 0, 0, &game);
+                    ^
+input.c:44:23: error: expected declaration specifiers or ‘...’ before ‘&’ token
+  playCard(5, 0, 0, 0, &game);
+                       ^
+input.c:46:29: error: ‘game’ undeclared here (not in a function)
+  int result = numHandCards(&game);
+                             ^
+input.c:48:9: error: expected declaration specifiers or ‘...’ before string constant
+  printf("Number Of Card: %d\n", result);
+         ^
+input.c:48:33: error: expected declaration specifiers or ‘...’ before ‘result’
+  printf("Number Of Card: %d\n", result);
+                                 ^
+input.c:50:2: warning: data definition has no type or storage class [enabled by default]
+  myAssert(result);
+  ^
+input.c:50:2: warning: parameter names (without types) in function declaration [enabled by default]
+input.c:50:2: error: conflicting types for ‘myAssert’
+input.c:14:6: note: previous definition of ‘myAssert’ was here
+ void myAssert(int bool) 
+      ^
+input.c:52:2: warning: data definition has no type or storage class [enabled by default]
+  checkAsserts();
+  ^
+input.c:52:2: error: conflicting types for ‘checkAsserts’
+input.c:27:6: note: previous definition of ‘checkAsserts’ was here
+ void checkAsserts() 
+      ^
+input.c:53:2: error: expected identifier or ‘(’ before ‘return’
+  return 0;
+  ^
+input.c:54:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// ameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 1
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c:38:2: error: expected ‘,’ or ‘;’ at end of input
+  int randomSeed = 1
+  ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct g7;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:41:17: error: ‘numberOfPlayer’ undeclared (first use in this function)
+  initializeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+                 ^
+input.c:41:17: note: each undeclared identifier is reported only once for each function it appears in
+input.c:41:47: error: ‘randomSeed’ undeclared (first use in this function)
+  initializeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+                                               ^
+input.c:41:60: error: ‘game’ undeclared (first use in this function)
+  initializeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+                                                            ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// 7;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,c
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c:36:6: error: ‘kingdomCards’ redeclared as different kind of symbol
+  int kingdomCards[10] = {smithy,adventurer,gardens,embargo,c
+      ^
+In file included from input.c:8:0:
+dominion.h:81:6: note: previous declaration of ‘kingdomCards’ was here
+ int* kingdomCards(int k1, int k2, int k3, int k4, int k5, int k6, int k7,
+      ^
+input.c:36:60: error: ‘c’ undeclared here (not in a function)
+  int kingdomCards[10] = {smithy,adventurer,gardens,embargo,c
+                                                            ^
+input.c:36:2: error: expected ‘}’ at end of input
+  int kingdomCards[10] = {smithy,adventurer,gardens,embargo,c
+  ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 1utpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:41:19: error: invalid suffix "utpurse" on integer constant
+  int randomSeed = 1utpurse,mine,ambassador,
+                   ^
+input.c:42:30: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘}’ token
+         outpost,baron,tribute};
+                              ^
+input.c:43:2: warning: passing argument 2 of ‘initializeGame’ from incompatible pointer type [enabled by default]
+  initializeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+  ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: expected ‘int *’ but argument is of type ‘int * (*)(int,  int,  int,  int,  int,  int,  int,  int,  int,  int)’
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// utpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initi
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c:36:9: warning: data definition has no type or storage class [enabled by default]
+         outpost,baron,tribute};
+         ^
+input.c:36:9: error: ‘outpost’ redeclared as different kind of symbol
+In file included from input.c:8:0:
+dominion.h:49:4: note: previous definition of ‘outpost’ was here
+    outpost,
+    ^
+input.c:36:17: error: ‘baron’ redeclared as different kind of symbol
+         outpost,baron,tribute};
+                 ^
+In file included from input.c:8:0:
+dominion.h:39:4: note: previous definition of ‘baron’ was here
+    baron, /* choice1: boolean for discard of estate */
+    ^
+input.c:36:30: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘}’ token
+         outpost,baron,tribute};
+                              ^
+input.c:37:2: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ at end of input
+  initi
+  ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,calizeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:42:119: error: expected ‘}’ before ‘;’ token
+  int kingdomCards[10] = {smithy,adventurer,gardens,embargo,calizeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+                                                                                                                       ^
+input.c:55:1: error: expected ‘,’ or ‘;’ at end of input
+ }
+ ^
+input.c:55:1: error: expected declaration or statement at end of input
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// alizeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+
+	a
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c:37:2: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ at end of input
+  a
+  ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initiddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+Exit code 0
+
+dd: 63 deltas left: alizeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+
+	a
+
+dd (run #5): trying 31 + 32
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:63: error: expected ‘)’ before ‘;’ token
+  initializeGame(numberOfPlayer, kingdddCardToHand(0, 8, &game);
+                                                               ^
+input.c:55:1: warning: passing argument 2 of ‘initializeGame’ makes pointer from integer without a cast [enabled by default]
+ }
+ ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: expected ‘int *’ but argument is of type ‘int’
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+input.c:55:1: error: too few arguments to function ‘initializeGame’
+ }
+ ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: declared here
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+input.c:55:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initiomCards, randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: ‘initiomCards’ undeclared (first use in this function)
+  initiomCards, randomSeed, &game);
+  ^
+input.c:44:2: note: each undeclared identifier is reported only once for each function it appears in
+input.c:44:33: error: expected ‘;’ before ‘)’ token
+  initiomCards, randomSeed, &game);
+                                 ^
+input.c:44:33: error: expected statement before ‘)’ token
+Exit code 256
+dd: increase granularity to 4
+
+dd (run #6): trying 15 + 16 + 16 + 16
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numbeddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:47: error: expected ‘)’ before ‘;’ token
+  initializeGame(numbeddCardToHand(0, 8, &game);
+                                               ^
+input.c:55:1: error: too few arguments to function ‘initializeGame’
+ }
+ ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: declared here
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+input.c:55:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initirOfPlayer, kingdomCards, randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: ‘initirOfPlayer’ undeclared (first use in this function)
+  initirOfPlayer, kingdomCards, randomSeed, &game);
+  ^
+input.c:44:2: note: each undeclared identifier is reported only once for each function it appears in
+input.c:44:49: error: expected ‘;’ before ‘)’ token
+  initirOfPlayer, kingdomCards, randomSeed, &game);
+                                                 ^
+input.c:44:49: error: expected statement before ‘)’ token
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initirOfPlayer, kingdddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: ‘initirOfPlayer’ undeclared (first use in this function)
+  initirOfPlayer, kingdddCardToHand(0, 8, &game);
+  ^
+input.c:44:2: note: each undeclared identifier is reported only once for each function it appears in
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numbeomCards, randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:17: error: ‘numbeomCards’ undeclared (first use in this function)
+  initializeGame(numbeomCards, randomSeed, &game);
+                 ^
+input.c:44:17: note: each undeclared identifier is reported only once for each function it appears in
+input.c:44:2: warning: passing argument 2 of ‘initializeGame’ makes pointer from integer without a cast [enabled by default]
+  initializeGame(numbeomCards, randomSeed, &game);
+  ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: expected ‘int *’ but argument is of type ‘int’
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+input.c:44:2: warning: passing argument 3 of ‘initializeGame’ makes integer from pointer without a cast [enabled by default]
+  initializeGame(numbeomCards, randomSeed, &game);
+  ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: expected ‘int’ but argument is of type ‘struct gameState *’
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+input.c:44:2: error: too few arguments to function ‘initializeGame’
+  initializeGame(numbeomCards, randomSeed, &game);
+  ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: declared here
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initiomCards, randomSddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: ‘initiomCards’ undeclared (first use in this function)
+  initiomCards, randomSddCardToHand(0, 8, &game);
+  ^
+input.c:44:2: note: each undeclared identifier is reported only once for each function it appears in
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:33: error: ‘kingdeed’ undeclared (first use in this function)
+  initializeGame(numberOfPlayer, kingdeed, &game);
+                                 ^
+input.c:44:33: note: each undeclared identifier is reported only once for each function it appears in
+input.c:44:2: warning: passing argument 3 of ‘initializeGame’ makes integer from pointer without a cast [enabled by default]
+  initializeGame(numberOfPlayer, kingdeed, &game);
+  ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: expected ‘int’ but argument is of type ‘struct gameState *’
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+input.c:44:2: error: too few arguments to function ‘initializeGame’
+  initializeGame(numberOfPlayer, kingdeed, &game);
+  ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: declared here
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initieed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: ‘initieed’ undeclared (first use in this function)
+  initieed, &game);
+  ^
+input.c:44:2: note: each undeclared identifier is reported only once for each function it appears in
+input.c:44:17: error: expected ‘;’ before ‘)’ token
+  initieed, &game);
+                 ^
+input.c:44:17: error: expected statement before ‘)’ token
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards, randomSddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:79: error: expected ‘)’ before ‘;’ token
+  initializeGame(numberOfPlayer, kingdomCards, randomSddCardToHand(0, 8, &game);
+                                                                               ^
+input.c:55:1: error: too few arguments to function ‘initializeGame’
+ }
+ ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: declared here
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+input.c:55:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+Exit code 256
+dd: increase granularity to 8
+
+dd (run #7): trying 7 + 8 + 8 + 8 + 8 + 8 + 8 + 8
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGaddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+Exit code 0
+
+dd: 56 deltas left: me(numberOfPlayer, kingdomCards, randomSeed, &game);
+
+	a
+
+dd (run #8): trying 8 + 8 + 8 + 8 + 8 + 8 + 8
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGarOfPlayer, kingdomCards, randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: ‘initializeGarOfPlayer’ undeclared (first use in this function)
+  initializeGarOfPlayer, kingdomCards, randomSeed, &game);
+  ^
+input.c:44:2: note: each undeclared identifier is reported only once for each function it appears in
+input.c:44:56: error: expected ‘;’ before ‘)’ token
+  initializeGarOfPlayer, kingdomCards, randomSeed, &game);
+                                                        ^
+input.c:44:56: error: expected statement before ‘)’ token
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGarOfPlayeddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+Exit code 0
+
+dd: 48 deltas left: me(number, kingdomCards, randomSeed, &game);
+
+	a
+
+dd (run #9): trying 8 + 8 + 8 + 8 + 8 + 8
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGarOfPlayer, kingdddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: ‘initializeGarOfPlayer’ undeclared (first use in this function)
+  initializeGarOfPlayer, kingdddCardToHand(0, 8, &game);
+  ^
+input.c:44:2: note: each undeclared identifier is reported only once for each function it appears in
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayeomCards, randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:17: error: ‘numberOfPlayeomCards’ undeclared (first use in this function)
+  initializeGame(numberOfPlayeomCards, randomSeed, &game);
+                 ^
+input.c:44:17: note: each undeclared identifier is reported only once for each function it appears in
+input.c:44:2: warning: passing argument 2 of ‘initializeGame’ makes pointer from integer without a cast [enabled by default]
+  initializeGame(numberOfPlayeomCards, randomSeed, &game);
+  ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: expected ‘int *’ but argument is of type ‘int’
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+input.c:44:2: warning: passing argument 3 of ‘initializeGame’ makes integer from pointer without a cast [enabled by default]
+  initializeGame(numberOfPlayeomCards, randomSeed, &game);
+  ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: expected ‘int’ but argument is of type ‘struct gameState *’
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+input.c:44:2: error: too few arguments to function ‘initializeGame’
+  initializeGame(numberOfPlayeomCards, randomSeed, &game);
+  ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: declared here
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGarOfPlayeomCards,ddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: ‘initializeGarOfPlayeomCards’ undeclared (first use in this function)
+  initializeGarOfPlayeomCards,ddCardToHand(0, 8, &game);
+  ^
+input.c:44:2: note: each undeclared identifier is reported only once for each function it appears in
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingd randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:33: error: ‘kingd’ undeclared (first use in this function)
+  initializeGame(numberOfPlayer, kingd randomSeed, &game);
+                                 ^
+input.c:44:33: note: each undeclared identifier is reported only once for each function it appears in
+input.c:44:39: error: expected ‘)’ before ‘randomSeed’
+  initializeGame(numberOfPlayer, kingd randomSeed, &game);
+                                       ^
+input.c:44:39: error: too few arguments to function ‘initializeGame’
+In file included from input.c:8:0:
+dominion.h:84:5: note: declared here
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGarOfPlaye randomSddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: unknown type name ‘initializeGarOfPlaye’
+  initializeGarOfPlaye randomSddCardToHand(0, 8, &game);
+  ^
+input.c:44:43: error: expected declaration specifiers or ‘...’ before numeric constant
+  initializeGarOfPlaye randomSddCardToHand(0, 8, &game);
+                                           ^
+input.c:44:46: error: expected declaration specifiers or ‘...’ before numeric constant
+  initializeGarOfPlaye randomSddCardToHand(0, 8, &game);
+                                              ^
+input.c:44:49: error: expected declaration specifiers or ‘...’ before ‘&’ token
+  initializeGarOfPlaye randomSddCardToHand(0, 8, &game);
+                                                 ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards,eed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:46: error: ‘eed’ undeclared (first use in this function)
+  initializeGame(numberOfPlayer, kingdomCards,eed, &game);
+                                              ^
+input.c:44:46: note: each undeclared identifier is reported only once for each function it appears in
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGarOfPlayeeed, &gaddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: ‘initializeGarOfPlayeeed’ undeclared (first use in this function)
+  initializeGarOfPlayeeed, &gaddCardToHand(0, 8, &game);
+  ^
+input.c:44:2: note: each undeclared identifier is reported only once for each function it appears in
+input.c:44:27: error: lvalue required as unary ‘&’ operand
+  initializeGarOfPlayeeed, &gaddCardToHand(0, 8, &game);
+                           ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards, randomSme);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:47: error: ‘randomSme’ undeclared (first use in this function)
+  initializeGame(numberOfPlayer, kingdomCards, randomSme);
+                                               ^
+input.c:44:47: note: each undeclared identifier is reported only once for each function it appears in
+input.c:44:2: error: too few arguments to function ‘initializeGame’
+  initializeGame(numberOfPlayer, kingdomCards, randomSme);
+  ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: declared here
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGarOfPlayeme);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: ‘initializeGarOfPlayeme’ undeclared (first use in this function)
+  initializeGarOfPlayeme);
+  ^
+input.c:44:2: note: each undeclared identifier is reported only once for each function it appears in
+input.c:44:24: error: expected ‘;’ before ‘)’ token
+  initializeGarOfPlayeme);
+                        ^
+input.c:44:24: error: expected statement before ‘)’ token
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards, randomSeed, &gaddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:59: error: lvalue required as unary ‘&’ operand
+  initializeGame(numberOfPlayer, kingdomCards, randomSeed, &gaddCardToHand(0, 8, &game);
+                                                           ^
+input.c:44:87: error: expected ‘)’ before ‘;’ token
+  initializeGame(numberOfPlayer, kingdomCards, randomSeed, &gaddCardToHand(0, 8, &game);
+                                                                                       ^
+input.c:55:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayeddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:55: error: expected ‘)’ before ‘;’ token
+  initializeGame(numberOfPlayeddCardToHand(0, 8, &game);
+                                                       ^
+input.c:55:1: error: too few arguments to function ‘initializeGame’
+ }
+ ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: declared here
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+input.c:55:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+Exit code 256
+dd: increase granularity to 12
+
+dd (run #10): trying 4 + 4 + 4 + 4 + 4 + 4 + 4 + 4 + 4 + 4 + 4 + 4
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGarOfPlayer, kddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: ‘initializeGarOfPlayer’ undeclared (first use in this function)
+  initializeGarOfPlayer, kddCardToHand(0, 8, &game);
+  ^
+input.c:44:2: note: each undeclared identifier is reported only once for each function it appears in
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayeingdomCards, randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:17: error: ‘numberOfPlayeingdomCards’ undeclared (first use in this function)
+  initializeGame(numberOfPlayeingdomCards, randomSeed, &game);
+                 ^
+input.c:44:17: note: each undeclared identifier is reported only once for each function it appears in
+input.c:44:2: warning: passing argument 2 of ‘initializeGame’ makes pointer from integer without a cast [enabled by default]
+  initializeGame(numberOfPlayeingdomCards, randomSeed, &game);
+  ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: expected ‘int *’ but argument is of type ‘int’
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+input.c:44:2: warning: passing argument 3 of ‘initializeGame’ makes integer from pointer without a cast [enabled by default]
+  initializeGame(numberOfPlayeingdomCards, randomSeed, &game);
+  ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: expected ‘int’ but argument is of type ‘struct gameState *’
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+input.c:44:2: error: too few arguments to function ‘initializeGame’
+  initializeGame(numberOfPlayeingdomCards, randomSeed, &game);
+  ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: declared here
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGarOfPlayeingdddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+Exit code 0
+
+dd: 44 deltas left: me(number, komCards, randomSeed, &game);
+
+	a
+
+dd (run #11): trying 4 + 4 + 4 + 4 + 4 + 4 + 4 + 4 + 4 + 4 + 4
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGarOfPlayeingdomCaddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+Exit code 0
+
+dd: 40 deltas left: me(number, krds, randomSeed, &game);
+
+	a
+
+dd (run #12): trying 4 + 4 + 4 + 4 + 4 + 4 + 4 + 4 + 4 + 4
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGarOfPlayeingdomCards,ddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: ‘initializeGarOfPlayeingdomCards’ undeclared (first use in this function)
+  initializeGarOfPlayeingdomCards,ddCardToHand(0, 8, &game);
+  ^
+input.c:44:2: note: each undeclared identifier is reported only once for each function it appears in
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCa randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:33: error: ‘kingdomCa’ undeclared (first use in this function)
+  initializeGame(numberOfPlayer, kingdomCa randomSeed, &game);
+                                 ^
+input.c:44:33: note: each undeclared identifier is reported only once for each function it appears in
+input.c:44:43: error: expected ‘)’ before ‘randomSeed’
+  initializeGame(numberOfPlayer, kingdomCa randomSeed, &game);
+                                           ^
+input.c:44:43: error: too few arguments to function ‘initializeGame’
+In file included from input.c:8:0:
+dominion.h:84:5: note: declared here
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGarOfPlayeingdomCa randdCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: unknown type name ‘initializeGarOfPlayeingdomCa’
+  initializeGarOfPlayeingdomCa randdCardToHand(0, 8, &game);
+  ^
+input.c:44:47: error: expected declaration specifiers or ‘...’ before numeric constant
+  initializeGarOfPlayeingdomCa randdCardToHand(0, 8, &game);
+                                               ^
+input.c:44:50: error: expected declaration specifiers or ‘...’ before numeric constant
+  initializeGarOfPlayeingdomCa randdCardToHand(0, 8, &game);
+                                                  ^
+input.c:44:53: error: expected declaration specifiers or ‘...’ before ‘&’ token
+  initializeGarOfPlayeingdomCa randdCardToHand(0, 8, &game);
+                                                     ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards,domSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:46: error: ‘domSeed’ undeclared (first use in this function)
+  initializeGame(numberOfPlayer, kingdomCards,domSeed, &game);
+                                              ^
+input.c:44:46: note: each undeclared identifier is reported only once for each function it appears in
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGarOfPlayeingdomCadomSddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+Exit code 0
+
+dd: 36 deltas left: me(number, krds, raneed, &game);
+
+	a
+
+dd (run #13): trying 4 + 4 + 4 + 4 + 4 + 4 + 4 + 4 + 4
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGarOfPlayeingdomCadomSeed,ddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: ‘initializeGarOfPlayeingdomCadomSeed’ undeclared (first use in this function)
+  initializeGarOfPlayeingdomCadomSeed,ddCardToHand(0, 8, &game);
+  ^
+input.c:44:2: note: each undeclared identifier is reported only once for each function it appears in
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards, randomS &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:47: error: ‘randomS’ undeclared (first use in this function)
+  initializeGame(numberOfPlayer, kingdomCards, randomS &game);
+                                               ^
+input.c:44:47: note: each undeclared identifier is reported only once for each function it appears in
+input.c:44:2: error: too few arguments to function ‘initializeGame’
+  initializeGame(numberOfPlayer, kingdomCards, randomS &game);
+  ^
+In file included from input.c:8:0:
+dominion.h:84:5: note: declared here
+ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+     ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGarOfPlayeingdomCadomS &gaddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: ‘initializeGarOfPlayeingdomCadomS’ undeclared (first use in this function)
+  initializeGarOfPlayeingdomCadomS &gaddCardToHand(0, 8, &game);
+  ^
+input.c:44:2: note: each undeclared identifier is reported only once for each function it appears in
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards, randomSeed,me);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:58: error: ‘me’ undeclared (first use in this function)
+  initializeGame(numberOfPlayer, kingdomCards, randomSeed,me);
+                                                          ^
+input.c:44:58: note: each undeclared identifier is reported only once for each function it appears in
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGarOfPlayeingdomCadomSme);ddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: ‘initializeGarOfPlayeingdomCadomSme’ undeclared (first use in this function)
+  initializeGarOfPlayeingdomCadomSme);ddCardToHand(0, 8, &game);
+  ^
+input.c:44:2: note: each undeclared identifier is reported only once for each function it appears in
+input.c:44:36: error: expected ‘;’ before ‘)’ token
+  initializeGarOfPlayeingdomCadomSme);ddCardToHand(0, 8, &game);
+                                    ^
+input.c:44:36: error: expected statement before ‘)’ token
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards, randomSeed, &ga
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:60: error: ‘ga’ undeclared (first use in this function)
+  initializeGame(numberOfPlayer, kingdomCards, randomSeed, &ga
+                                                            ^
+input.c:44:60: note: each undeclared identifier is reported only once for each function it appears in
+input.c:46:2: error: expected ‘)’ before ‘addCardToHand’
+  addCardToHand(0, 8, &game);
+  ^
+input.c:57:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGarOfPlayeingdomCadomS
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+input.c: In function ‘main’:
+input.c:44:2: error: unknown type name ‘initializeGarOfPlayeingdomCadomS’
+  initializeGarOfPlayeingdomCadomS
+  ^
+input.c:46:16: error: expected declaration specifiers or ‘...’ before numeric constant
+  addCardToHand(0, 8, &game);
+                ^
+input.c:46:19: error: expected declaration specifiers or ‘...’ before numeric constant
+  addCardToHand(0, 8, &game);
+                   ^
+input.c:46:22: error: expected declaration specifiers or ‘...’ before ‘&’ token
+  addCardToHand(0, 8, &game);
+                      ^
+Exit code 256
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards, randomSeed, &game);ddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+Exit code 0
+
+dd: 4 deltas left: 
+
+	a
+
+dd (run #14): trying 2 + 2
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+
+ddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+Exit code 0
+
+dd: 2 deltas left: 	a
+
+dd (run #15): trying 1 + 1
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+
+	ddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}
+sh: line 0: ulimit: stack size: cannot modify limit: Invalid argument
+Exit code 0
+
+dd: 1 deltas left: a
+dd: done
+The 1-minimal failure-inducing difference is [(814, 'a')]
+/* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initiddCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+}alizeGarOfPlayeingdomCadomSme(number, krds, raneed, &game);
+
+	passes, /* 
+* Krisna Irawan 
+* CS 362 
+* Assignment 2  
+* Testing the Council Room Card Function
+*/
+
+#include "dominion.h"
+#include "interface.h"
+#include <stdio.h>
+
+int failed = 0;
+
+void myAssert(int bool) 
+{
+	if (bool == 9)
+	{
+		printf("TEST SUCCEED: Correct Council Room Card Function \n");
+	} 
+	else if(bool != 9) 
+	{
+		printf("TEST FAILED: Incorrect Council Room Card Function \n");
+		failed = 1;
+	}
+}
+
+void checkAsserts() 
+{
+  if (!failed) 
+  {
+    printf ("TEST SUCCESSFULLY COMPLETED\n\n");
+  }
+}
+
+// Testing the Council Room Card Function
+int main() 
+{
+	struct gameState game;
+	
+	int numberOfPlayer = 2; 
+	int randomSeed = 17;
+	int kingdomCards[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+	       outpost,baron,tribute};
+	initializeGame(numberOfPlayer, kingdomCards, randomSeed, &game);
+
+	addCardToHand(0, 8, &game);
+	playCard(5, 0, 0, 0, &game);
+
+	int result = numHandCards(&game);
+  
+	printf("Number Of Card: %d\n", result);
+  
+	myAssert(result);
+
+	checkAsserts();
+	return 0;
+} fails
