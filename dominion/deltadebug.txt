@@ -28,5 +28,5 @@ Here is step by step explaination that I do for this part of my project:
 	            to test it. It will minimize the failing case and narrow down 
 	            our focus to a function that will be most necessary in creating 
 	            a bug, which will definitely safe a lot of time and effort during 
-				debugging. 
+                debugging. 
 				
